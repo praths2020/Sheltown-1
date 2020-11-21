@@ -278,6 +278,10 @@ ul.breadcrumb li a:hover {
 .carousel-control-next {
   right: 10px;
 }
+.nav-pills a.active {
+  background-color: white !important;
+  color: black !important;
+}
 /*--------------------------------right side end------------------------------------------------*/
 footer {
   color: #fff;
