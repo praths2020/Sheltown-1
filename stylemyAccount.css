@@ -282,6 +282,33 @@ ul.breadcrumb li a:hover {
   background-color: white !important;
   color: black !important;
 }
+/*--------------------------------verify yourself section-----------------------------*/
+.verification {
+  margin: 10px 0px;
+  padding: 20px 30px;
+}
+.verification div {
+  margin: 20px 0px;
+}
+.buttons button {
+  padding: 5px 40px;
+  background: #2ecab6;
+  color: white;
+  border: 1px solid black;
+  font-size: 16px;
+}
+.bold {
+  font-weight: bold;
+  font-size: 16px;
+}
+.p3 {
+  color: grey;
+  margin-top: 0px;
+}
+.p1 {
+  color: red;
+  font-size: 20px;
+}
 /*--------------------------------right side end------------------------------------------------*/
 footer {
   color: #fff;
