@@ -84,6 +84,13 @@ header {
     margin-bottom: 0px !important;
     font-size: 16px;
   }
+  .llist {
+    padding: 0 0 0 40px;
+  }
+  .l {
+    padding: 20px 0 0 40px;
+  }
+
   .card {
     margin: 10px -5px;
   }
