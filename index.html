@@ -132,10 +132,10 @@
                     <div class="icon">
                       <div class="row">
                         <div class="col-3">
-                           <i class="fa-3x fas fa-user-circle " aria-hidden="true"></i>
+                           <i class="fa-3x fas fa-user-circle" aria-hidden="true"></i>
                         </div>
                         <div class="col-9">
-                            <span style="font-size: 24px;color: grey;">Hello,</span><br><span style="font-size: 18px;font-weight: bold;">Priyanka</span>
+                            <span style="font-size: 16px;color: grey;">Hello,</span><br><span style="font-size: 18px;font-weight: bold;">Priyanka</span>
                         </div>
                     </div>
                     </div>
@@ -250,7 +250,7 @@
                                 </a>
                               </div>
                             </div>
-                            <div class="pp1">
+                            <div class="pp2">
                               <ul>
                                 <li>Property Name :</li>
                                 <li>Monthly rent :</li>
@@ -268,16 +268,16 @@
                             <div class="pp1">
                               <ul>
                                 <li><i class="fas fa-circle"></i><b>Booking confirmed</b></li>
-                                <li style="font-size: 18px; padding: 0 0 0 18px;"> Ready To Move In</li>
+                                <li style="padding: 0 0 0 18px;"> Ready To Move In</li>
                               </ul>
                             </div>
                           </div>
                     
                     
-                          <!--<div class="lower">-->
+                          <div class="lower">
                           <p><a href=""><i class="fas fa-star"></i>Rate And Review Properties</a></p>
-                          <!--</div>-->
-                        </div>
+                         
+                        </div></div>
                       </div>
                     
                   
@@ -291,24 +291,22 @@
                         <li><a href="#">Profile information</a></li>
                       </ul>
                     </div>
-                    <div class="personalinformation">
-                      <div class="info">
-                        <div style="margin-bottom: 20px;">
-                          <span style="margin-right: 20px;font-size: 20px;font-weight: bold;">Personal Information</span>
-                          <span style=""><a href="#">Edit</a></span>
-                        </div>
-                        <form>
-                          <div style="margin-bottom: 20px;">
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <input type="text" class="form-control" placeholder="First name">
-                              </div>
-                              <div class="col-sm-3">
-                                <input type="text" class="form-control" placeholder="Last name">
-                              </div>
-                            </div>
+                  <div class="personalinfo">
+                    <div class="info">
+                      <form class="form-horizontal" id="myform">
+                  
+                        <fieldset id="persional_information" class="">
+                          <legend class="signup-legend">Personal information
+                            <span style="font-size:16px;margin-left: 20px; "><a href="#">Edit</a></span></legend>
+                          <div class="form-group">
+                            <lable class="">
+                              <input type="text" class="" placeholder="First name">
+                            </lable>
+                            <lable class="">
+                              <input type="text" class="" placeholder="Last name">
+                            </lable>
                           </div>
-                          <div style="margin-bottom: 20px;">
+                          <div class="form-group">
                             <h6 style="color:grey;">Your Gender</h6>
                             <div class="form-check form-check-inline">
                               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
@@ -319,34 +317,38 @@
                               <label class="form-check-label" for="inlineRadio2" style="font-size: 18px">Female</label>
                             </div>
                           </div>
-                          <div>
-                            <div class="form-group col-md-5 form-inline">
-                              <label for="inputEmail4" style="font-size: 20px;font-weight: bold;">Email Address</label>
-                              <a href="#" style="margin-left: 20px; font-size: 16px;">Edit</a>
-                              <a href="#" style=" margin-left: 20px;font-size: 16px;">Change Password</a>
-                              <div><input type="email" class="form-control" id="inputEmail4" placeholder="Email"></div>
-                            </div>
-                            <div class="col-md-4 form-inline">
-                              <label for="phone" style="font-size: 20px;font-weight: bold;">Contact number</label>
-                              <a href="#" style=" font-size: 16px;margin-left: 20px">Edit</a><br><br>
-                              <input type="tel" class="form-control"> </div>
+                          <legend class="signup-legend">Email Address
+                            <span style="font-size:16px;margin-left: 20px; "><a href="#">Edit</a>
+                            </span>
+                            <span style="font-size:16px;margin-left: 20px; "><a href="#">Change Password</a>
+                            </span></legend>
+                          <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Email Id" />
                           </div>
-                        </form>
-                      </div>
-                    
-                      <div class="faqs" style="margin-top: 20px;">
-                        <h5 style="font-weight: bold;margin-bottom: 15px;">FAQs</h5>
-                        <p class="bold">What happens when I update my email address (or mobile number)?</p>
-                        <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication
-                          on your updated email address (or mobile number).</p>
-                        <p class="bold">When will my account be updated with the new email address (or mobile number)?</p>
-                        <p>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
-                        <p class="bold">What happens to my existing account when I update my email address (or mobile number)?</p>
-                        <p>Updating your email address (or mobile number) dosen't invalidate your account. Your account remains fully
-                          functional.<br> You'll continue seeing your Order history, saved information and personal details.
-                        </p>
-                      </div>
+                          <legend class="signup-legend">Contact Number
+                            <span style="font-size:16px;margin-left: 20px; "><a href="#">Edit</a>
+                            </span>
+                          </legend>
+                          <div class="form-group">
+                            <input type="text" name="phno" id="phno" placeholder="Contact No.">
+                          </div>
+                        </fieldset>
+                      </form>
                     </div>
+                  
+                    <div class="faqs" style="margin-top: 20px;">
+                      <h5 style="font-weight: bold;margin-bottom: 15px;">FAQs</h5>
+                      <p class="bold">What happens when I update my email address (or mobile number)?</p>
+                      <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication
+                        on your updated email address (or mobile number).</p>
+                      <p class="bold">When will my account be updated with the new email address (or mobile number)?</p>
+                      <p>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
+                      <p class="bold">What happens to my existing account when I update my email address (or mobile number)?</p>
+                      <p>Updating your email address (or mobile number) dosen't invalidate your account. Your account remains fully
+                        functional.<br> You'll continue seeing your Order history, saved information and personal details.
+                      </p>
+                    </div>
+                  </div>
                   </div>
                   <!---------------------------------rigghhttside for Profile information section end------------------------------------------------- -->
 
@@ -362,38 +364,40 @@
                       </ul>
                     </div>
                 <div class="verification">
-                    <div>
-                      <p class="p1">Get best offers Available</p>
-                    </div>
-                    <div>
-                      <h4 class="p2">Verify your identity</h4>
-                    </div>
-                    <div>
-                      <label>Verification Status:</label>
-                      <select name="cars" id="cars">
-                        <option value="">Verification pending</option>
-                        <option value="">Verification Successful</option>
-                      </select>
-                    </div>
-                    <div class="buttons">
-                      <button class="btn1">Upload</button>
-                      <button class="btn1">Browse</button>
-                      <button class="">Submit</button>
-                    </div>
-                  <p class="p3">(Valid IDs: Adharcard, PAN, Driving Licence, Passport, or any other ID with name and photo) </p>
+                  <div>
+                    <p class="p1">Get best offers Available</p>
                   </div>
+                  <div>
+                    <h4 class="p2">Verify your identity</h4>
+                  </div>
+                  <div>
+                    <label>Verification Status:</label>
+                    <select name="cars" id="cars">
+                      <option value="">Verification pending</option>
+                      <option value="">Verification Successful</option>
+                    </select>
+                  </div>
+                  <div class="buttons">
+                    <button class="btn bg-danger">Upload</button>
+                    <button class="btn bg-warning">Browse</button>
+                    <button class="btn bg-success">Submit</button>
+                  </div>
+                  <p class="p3">(Valid IDs: Adharcard, PAN, Driving Licence, Passport, or any other ID with name and photo) </p>
                   <div class="faqs">
                     <h5 style="font-weight: bold;margin-bottom: 15px;">FAQs</h5>
                     <p class="bold">What happens when I update my email address (or mobile number)?</p>
-                    <p>Your login email id (or mobile number) changes, likewise.<br> You'll receive all your account related communication on
-                      your updated email address (or mobile number).</p>
-                      <p class="bold">When will my account be updated with the new email address (or mobile number)?</p>
-                      <p>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
-                      <p class="bold">What happens to my existing account when I update my email address (or mobile number)?</p>
-                      <p>Updating your email address (or mobile number) dosen't invalidate your account. Your account remains fully functional.<br> You'll continue seeing your Order history, saved information and personal details.
-                      </p>
-                      </div>
+                    <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication
+                      on your updated email address (or mobile number).</p>
+                
+                    <p class="bold">When will my account be updated with the new email address (or mobile number)?</p>
+                    <p>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
+                
+                    <p class="bold">What happens to my existing account when I update my email address (or mobile number)?</p>
+                    <p> Updating your email address (or mobile number) doesn't invalidate your account. Your account remains fully
+                      functional. You'll continue seeing your Order history, saved information and personal details.</p>
                   </div>
+                
+                </div>
                   <!---------------------------------rigghhttside for Verify yourself section end------------------------------------------------- -->
 
 
