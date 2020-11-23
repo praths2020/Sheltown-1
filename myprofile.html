@@ -70,7 +70,7 @@
           <legend class="signup-legend">Email Address
             <span style="font-size:16px;margin-left: 20px; "><a href="#">Edit</a>
             </span>
-            <span style="font-size:16px;margin-left: 20px; "><a href="#">Change Password</a>
+            <span style="font-size:16px;margin-left: 20px; "><a class="change" href="#changep" data-toggle="modal" data-target="#exampleModalCenter">Change Password</a>
             </span></legend>
           <div class="form-group">
             <input type="email" name="email" id="email" placeholder="Email Id" />
@@ -98,5 +98,36 @@
         functional.<br> You'll continue seeing your Order history, saved information and personal details.
       </p>
     </div>
+ 
+    <div class="modal fade changep" id="exampleModalCenter" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title" id="exampleModalLongTitle">
+              <h4><strong>Change Password</strong></h4>
+            </span>
+    
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    
+              <span aria-hidden="true">Resend OTP</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group col-md-6">
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Type Current Password"><br>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Type New Password"><br>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Retype New Password"><br>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Enter OTP">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-info">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
   </body>
 </html>

@@ -332,31 +332,7 @@ ul.breadcrumb li a:hover {
   color: red;
   font-size: 20px;
 }
-/*--------------------------------verify yourself section-----------------------------*/
-.verification {
-  margin: 10px 0px;
-  padding: 20px 30px;
-}
-.verification div {
-  margin: 20px 0px;
-}
-.buttons .btn {
-  padding: 5px 40px;
-  color: white;
-  font-size: 16px;
-}
-.bold {
-  font-weight: bold;
-  font-size: 16px;
-}
-.p3 {
-  color: grey;
-  margin-top: 0px;
-}
-.p1 {
-  color: red;
-  font-size: 18px;
-}
+
 /*--------------------------personal information ----------------------------------*/
 .personalinfo {
   margin: 10px 0px;
@@ -375,6 +351,17 @@ input[type="email"] {
   background-color: #eceff1;
   font-size: 16px;
   letter-spacing: 1px;
+}
+
+.change {
+  margin-left: 15px;
+  margin-top: 0;
+}
+.changep {
+  align-items: center;
+  margin: 40px;
+  width: 80%;
+  height: 80%;
 }
 
 /*--------------------------------right side end------------------------------------------------*/
