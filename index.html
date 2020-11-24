@@ -351,8 +351,10 @@
                                 <option value="November">November</option>
                                 <option value="December">December</option>
                               </select>
+                              
                               <label for="start">Year:</label>
-                              <input type="year" id="bdaymonth" name="bdaymonth">
+                              <select name="select" id="dropdownYear" onchange="getProjectReportFunc()">
+                              </select>
 
                                 <a style="margin-left: 30px;" type="button" class="btn btn-info" href="#" data-dismiss="modal" aria-label="Close">Pay
                                   Rent</a>
@@ -791,7 +793,7 @@
 <!-- Footer -->
  </section>    
      <!---------------------------------desktop view end--------------------------------->
-     
+     <script src="./js/myaccount.js"></script>
    <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
