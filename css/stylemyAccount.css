@@ -332,6 +332,27 @@ ul.breadcrumb li a:hover {
   color: red;
   font-size: 20px;
 }
+.b {
+  width: 200px;
+}
+.b3 {
+  width: 20vh;
+}
+
+/* apply CSS to the select tag of  
+         .dropdown-container div*/
+
+.dropdown-container select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+}
+
+/* for IE10 */
+.dropdown-container select::-ms-expand {
+  display: none;
+}
 
 /*--------------------------personal information ----------------------------------*/
 .personalinfo {
