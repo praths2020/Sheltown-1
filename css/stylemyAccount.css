@@ -317,7 +317,7 @@ ul.breadcrumb li a:hover {
 /*--------------------------------verify yourself section-----------------------------*/
 .verification {
   margin: 10px 0px;
-  padding: 20px 0px;
+  padding: 20px 5px;
 }
 .verification div {
   margin: 20px 0px;
@@ -345,7 +345,7 @@ ul.breadcrumb li a:hover {
   width: 160px;
 }
 .b3 {
-  width: 140px;
+  width: 130px;
 }
 
 /* apply CSS to the select tag of  
