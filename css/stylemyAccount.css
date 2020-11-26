@@ -204,11 +204,14 @@ header {
 .box .fa-clock,
 .box .fa-home .box,
 .fa-power-off,
-.fa-star,
 .fa-credit-card,
 .fa-bell,
 .fa-heart {
   color: #2ecab6;
+  margin-right: 15px;
+}
+.fa-star {
+  color: green;
   margin-right: 15px;
 }
 .sublist {
