@@ -84,7 +84,7 @@ header {
   }
   ul.breadcrumb li {
     display: inline;
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   ul.breadcrumb li + li:before {
     padding: 8px;
