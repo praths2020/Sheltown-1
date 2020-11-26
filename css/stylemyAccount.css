@@ -399,6 +399,18 @@ input[type="email"] {
 .coupon li {
   margin-bottom: 15px;
 }
+
+/*----------------------------Transactions-----------------*/
+
+.redText {
+  color: red;
+}
+.greenText {
+  color: #0f0;
+}
+.yellowText {
+  color: yellow;
+}
 /*--------------------------------right side end------------------------------------------------*/
 footer {
   color: #fff;
