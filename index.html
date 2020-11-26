@@ -326,9 +326,9 @@
                               </div>
                               <div class="form-group col-md-6" style="display: block;">
                                 <a style="display: inline;" href="#" style="color: #23b6ae">
-                                  <h6 style="display: inline;">Have a Promocode?</h6>
+                                  <h6 style="display: block;">Have a Promocode?</h6>
                                 </a>
-                                <a style="display: inline; margin-left: 20px;" href="#" style="color: #23b6ae">
+                                <a style="display: inline;" href="#" style="color: #23b6ae">
                                   <h6 style="display: inline;">offers</h6>
                                 </a>
                               </div>
@@ -381,7 +381,7 @@
                             </div>
                             <div class="modal-footer">
                       
-                              <button type="button" class="btn btn-info">Save changes</button>
+                              <button type="button" class="btn btn-info">Submit</button>
                             </div>
                           </div>
                         </div>
@@ -403,7 +403,7 @@
                             </div>
                             <div class="modal-footer">
                               
-                              <button type="button" class="btn btn-info">Save changes</button>
+                              <button type="button" class="btn btn-info">Save</button>
                             </div>
                           </div>
                         </div>
@@ -496,14 +496,17 @@
                             <input type="text" class="form-control" id="inputPassword4" placeholder="First name"><br>
                             <input type="text" class="form-control" id="inputPassword4" placeholder="Last name"><br>
                             <input type="email" name="email" class="form-control" id="email" placeholder="Email Id" style="background-color: white;">
-                            <input type="text" name="phno" class="form-control" id="phno" placeholder="Contact No.">
+                            <input type="text" name="phno" class="form-control" id="phno" placeholder="Contact No."><br/>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Enter OTP">
                           </div>
                         </div>
                         
-                        <div class="modal-footer">
-                          
-                          <button type="button" class="btn btn-info">Save changes</button>
-                        </div>
+                      <div class="modal-footer " style="margin-left: 10px;justify-content: space-between!important;">
+                        <!--<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>-->
+                        <span aria-hidden="true" style="font-size: 20px;color: #007bff;">Resend OTP</span>
+                        <button type="button" class="btn btn-info">Save changes</button>
+                      
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -657,9 +660,9 @@
                             <div class="dropdown-container">
                               <label></label>
                               <select name="" id="">
-                                <option value="">Success </option>
-                                <option value="">Pending</option>
-                                <option value="">Failed</option>
+                              <option value="" style="color: green">Success</option>
+                              <option value="" style="color: yellow">Pending</option>
+                              <option value="" style="color: red">Failed</option>
                               </select>
                             </div>
                              <div></div>
@@ -753,8 +756,8 @@
                             <div class="dropdown-container">
                               <label>Coupon Status : </label>
                               <select name="cars" id="cars" style="padding: 5px; font-size: 18px;">
-                                <option value="none">Ready To Use</option>
-                                <option value="none">Expired</option>
+                                <option value="none" style="color: green">Read To Use</option>
+                                <option value="none" style="color: red;">Expired</option>
                               </select></div>
                             <li style="display: inline-block;">Comment: <textarea class="form-control" rows="1"
                                 style="float: right; margin-left: 10px; margin-top: 10px;"></textarea></li>
@@ -778,8 +781,8 @@
                             <div class="dropdown-container">
                               <label>Coupon Status : </label>
                               <select name="cars" id="cars" style="padding: 5px; font-size: 18px;">
-                                <option value="none">Ready To Use</option>
-                                <option value="none">Expired</option>
+                                <option value="none" style="color: green">Read To Use</option>
+                                <option value="none" style="color: red;">Expired</option>
                               </select></div>
                             <li style="display: inline-block;">Comment: <textarea class="form-control" rows="1"
                                 style="float: right; margin-left: 10px; margin-top: 10px;"></textarea></li>
