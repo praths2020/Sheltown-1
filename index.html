@@ -300,76 +300,69 @@
                         </div></div>
                       </div>
 
-                      <div class="modal fade" id="payrent" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                        aria-hidden="true">
+                      <!---------------------------------pay rent modal start------------------------------- -->
+                      <div class="modal fade" id="payrent" tabindex="-1" role="dialog">
                         <div class="modal-dialog modal-dialog-centered" role="document">
-                          <div class="modal-content">
+                          <div class="modal-content p-1">
                             <div class="modal-header">
-                              <span class="modal-title" id="exampleModalLongTitle">
-                                <h4  style="color:  #2ecab6;"><strong>Pay Rent</strong></h4>
-                              </span>
-                      
+                              <h4 class="modal-title" style="color:  #2ecab6;">Pay Rent</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
                             </div>
-                            <div class="modal-body">
-                              <h4><strong>Pay Now</strong></h4>
-                              <div style="display:block;">
+                            <div class="modal-body ">
+                              <h4 style="margin-bottom: 20px;"><strong>Pay Now</strong></h4>
+                              <div style="display:block; margin: 10px;">
                                 <div style="display: inline;">
-                                <label>Paying For :</label>
-                                <select style="background-color: #5de0cf; padding: 5px;" name="cars" id="cars">
-                                  
-                                  
-                                  <option>Reservation</option>
-                                  <option>Monthly Rent</option>
-                                  <option >Security Deposit</option>
-                                </select></div>
+                                  <label>Paying For :</label>
+                                  <select style=" padding: 5px;" name="cars" id="cars">
+                                    <option>Reservation</option>
+                                    <option>Monthly Rent</option>
+                                    <option>Security Deposit</option>
+                                  </select></div>
                                 <div style="display: inline;">
                                   <input style="padding: 4px;" type="text" id="money" value="₹">
                                 </div>
                               </div>
-                              
-                              
                               <div class="form-group col-md-6" style="display: block;">
-                             
                                 <a style="display: inline;" href="#" style="color: #23b6ae">
                                   <h6 style="display: inline;">Have a Promocode?</h6>
                                 </a>
-                                
                                 <a style="display: inline; margin-left: 20px;" href="#" style="color: #23b6ae">
                                   <h6 style="display: inline;">offers</h6>
                                 </a>
-                            
-                            
                               </div>
                               <div style="display: inline;">
-                              <select name="DOBMonth">
-                                <option>Select Month</option>
-                                <option value="January">January</option>
-                                <option value="Febuary">Febuary</option>
-                                <option value="March">March</option>
-                                <option value="April">April</option>
-                                <option value="May">May</option>
-                                <option value="June">June</option>
-                                <option value="July">July</option>
-                                <option value="August">August</option>
-                                <option value="September">September</option>
-                                <option value="October">October</option>
-                                <option value="November">November</option>
-                                <option value="December">December</option>
-                              </select>
-                              
-                              <label for="start">Year:</label>
-                              <select name="select" id="dropdownYear" onchange="getProjectReportFunc()">
-                              </select>
-
-                                <a style="margin-left: 30px;" type="button" class="btn btn-info" href="#" data-dismiss="modal" aria-label="Close">Pay
-                                  Rent</a>
-                              
+                                <select name="DOBMonth">
+                                  <option>Select Month</option>
+                                  <option value="January">January</option>
+                                  <option value="Febuary">Febuary</option>
+                                  <option value="March">March</option>
+                                  <option value="April">April</option>
+                                  <option value="May">May</option>
+                                  <option value="June">June</option>
+                                  <option value="July">July</option>
+                                  <option value="August">August</option>
+                                  <option value="September">September</option>
+                                  <option value="October">October</option>
+                                  <option value="November">November</option>
+                                  <option value="December">December</option>
+                                </select>
+                      
+                                <label for="start">Year:</label>
+                                <select name="select" id="dropdownYear" onchange="getProjectReportFunc()">
+                                </select>
+                      
+                                <div class="modal-footer">
+                                  <a type="button" class="btn btn-info" href="#" data-dismiss="modal" aria-label="Close">Pay Rent</a>
+                                </div>
                               </div>
                             </div>
-                            
+                      
                           </div>
                         </div>
                       </div>
+                      <!---------------------------------Pay rent modal end------------------------------- -->
 
 
                       <div class="modal fade" id="issue" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -499,7 +492,7 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          <div class="form-group col-md-6">
+                          <div class="form-group col-md-12">
                             <input type="text" class="form-control" id="inputPassword4" placeholder="First name"><br>
                             <input type="text" class="form-control" id="inputPassword4" placeholder="Last name"><br>
                             <input type="email" name="email" class="form-control" id="email" placeholder="Email Id" style="background-color: white;">
@@ -508,7 +501,7 @@
                         </div>
                         
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          
                           <button type="button" class="btn btn-info">Save changes</button>
                         </div>
                       </div>
@@ -516,35 +509,35 @@
                   </div>
 
 
+                  <!---------------------------change password modal start------------------------------>
                   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <span class="modal-title" id="exampleModalLongTitle">
-                            <h4><strong>Change Password</strong></h4>
-                          </span>
-                  
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  
-                            <span aria-hidden="true">Resend OTP</span>
-                          </button>
-                        </div>
                         <div class="modal-body">
-                          <div class="form-group col-md-6">
+                          <div class="">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 style="text-align: center;color: #2ECAB6;margin-bottom: 50px;"><strong>Change Password</strong></h4>
+                          </div>
+                          <div class="form-group col-md-12 ">
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Type Current Password"><br>
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Type New Password"><br>
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Retype New Password"><br>
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Enter OTP">
                           </div>
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <div class="modal-footer " style="margin-left: 10px;justify-content: space-between!important;">
+                          <!--<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>-->
+                          <span aria-hidden="true" style="font-size: 20px;color: #007bff;">Resend OTP</span>
                           <button type="button" class="btn btn-info">Save changes</button>
+                  
                         </div>
                       </div>
                     </div>
                   </div>
+                  <!------------------------change password modal end--------------------------------->
                   <!---------------------------------rigghhttside for Profile information section end------------------------------------------------- -->
 
 
