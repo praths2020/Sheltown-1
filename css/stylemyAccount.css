@@ -203,6 +203,7 @@ header {
 .box .fa-calendar-check,
 .box .fa-clock,
 .box .fa-home .box,
+.fa-star,
 .fa-power-off,
 .fa-credit-card,
 .fa-bell,
@@ -210,7 +211,7 @@ header {
   color: #2ecab6;
   margin-right: 15px;
 }
-.fa-star {
+.lower .fa-star {
   color: green;
   margin-right: 15px;
 }
