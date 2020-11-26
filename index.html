@@ -72,15 +72,15 @@
               <div class="card-body">
                 <h6><i class="fa-1x fas fa-calendar-check " aria-hidden="true"></i>Payments</h6>
                 <div class="llist">All Transactions</div><hr>
-                <p><a href="">View Transactions</a></p>
+                <p><a href="alltransaction.html">View Transactions</a></p>
                 
                 <div class="llist l">Gift Cards</div>
             <hr>
-                <p><a href="">View Gifts</a></p>
+                <p><a href="giftcard.html">View Gifts</a></p>
                 
                 <div class="llist l">My Coupons</div>
                  <hr>
-                <p><a href="">View Coupons</a></p>
+                <p><a href="coupons.html">View Coupons</a></p>
                
             
               </div>
@@ -267,12 +267,11 @@
                             </div>
                             <div class="pp2">
                               <ul>
-                                <li>Property Name :</li>
-                                <li>Monthly rent :</li>
-                                <li>Payment status :</li>
-                                <li>Move-In Schedule :</li>
-                                <li>Last Payment : ₹ 320</li>
-                                <li>Date And Time : 19/11/2020</li>
+                              <li>Property Name :</li>
+                              <li>Monthly rent :</li>
+                              <li>Move-In Schedule :</li>
+                              <li>Last Payment Done: ₹ 320</li>
+                              <li>Date And Time : 19/11/2020 21:30</li>
                                 <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false"
                                   autocomplete="off">Raise An Issue</button>
                                 <a type="button" class="btn btn-info"   href="#pay" data-toggle="modal" data-target="#payrent" aria-pressed="false" autocomplete="off">Pay
@@ -282,8 +281,14 @@
                             </div>
                             <div class="pp1">
                               <ul>
-                                <li><i class="fas fa-circle"></i><b>Booking confirmed</b></li>
-                                <li style=" font-size: 16px;color: grey; padding: 0 0 0 20px;"> Ready To Move In</li>
+                                <li><div class="dropdown-container">
+                                  <label>Booking Status:</label>
+                                  <select name="" id="">
+                                    <option value="">Booking Confirmed</option>
+                                    <option value="">Booking Pending</option>
+                                  </select>
+                                </div></li>
+                                <li style=" font-size: 16px;color: grey; padding: 0 0 0 140px;"> Ready To Move In</li>
                               </ul>
                             </div>
                           </div>
@@ -383,7 +388,8 @@
                   
                         <fieldset id="persional_information" class="">
                           <legend class="signup-legend">Personal information
-                            <span style="font-size:16px;margin-left: 20px; "><a style="color:#23b6ae;" href="#">Edit</a></span></legend>
+                            <span style="font-size:16px;margin-left: 20px; "><a href="#edit" style="color: #23b6ae; font-size:18px;"
+                                data-toggle="modal" data-target="#edit">Edit</a></span></legend>
                           <div class="form-group">
                             <lable class="">
                               <input type="text" class="" placeholder="First name">
@@ -416,9 +422,7 @@
                           <div class="form-group">
                             <input type="text" name="phno" id="phno" placeholder="Contact No.">
                           </div>
-                          <button type="button" class="btn btn-info btn-lg" style="margin: 17px">
-                            Save
-                          </button>
+                          
                         </fieldset>
                       </form>
                     </div>
@@ -436,6 +440,34 @@
                       </p>
                     </div>
                   </div>
+                  </div>
+
+
+                  <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Edit Personal Information</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="First name"><br>
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="Last name"><br>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email Id" style="background-color: white;">
+                            <input type="text" name="phno" class="form-control" id="phno" placeholder="Contact No.">
+                          </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-info">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
 
@@ -536,7 +568,7 @@
 
 
                   <!---------------------------------rigghhttside for All Transactions section------------------------------------------------- -->
-                  <div class="tab-pane fade" id="v-pills-transactions" role="tabpanel" aria-labelledby="v-pills-transactions-tab">All Transactions
+                  <div class="tab-pane fade" id="v-pills-transactions" role="tabpanel" aria-labelledby="v-pills-transactions-tab">
                     <div>
                       <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
@@ -545,13 +577,93 @@
                         <li><a href="#">All Transactions</a></li>
                       </ul>
                     </div>
-                  </div>
+
+                    <div class="alltransaction">
+                      <div class="d1">
+                        <div class="row">
+                          <div class="col-5">
+                              <div class="dropdown-container">
+                                <label></label>
+                                 <select name="" id="">
+                                    <option value=""> All Transaction </option>
+                                    <option value="">All Transactions</option>  
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-2">
+                            <h6>Amount</h6>
+                          </div> 
+                          <div class="col-2">
+                            <h6>Status</h6>
+                          </div>
+                          <div class="col-3">
+                            <h6>Comments</h6>
+                          </div> 
+                        </div> 
+                       </div><hr>
+                       <div class="d2">
+                         <div class="row">
+                          <div class="col-5">
+                            <div class="d21">
+                              <p class="dp1">Paid for booking at (property name)</p>
+                              <p class="dp2">4 March 2020, 9:51 pm</p>
+                              <p class="dp3">Booking Id: property01</p>
+                           </div>
+                          </div>
+                          <div class="col-2">
+                            <div>₹6,000</div>
+                          </div> 
+                          <div class="col-2">
+                            <div class="dropdown-container">
+                              <label></label>
+                              <select name="" id="">
+                                <option value="">Success </option>
+                                <option value="">Pending</option>
+                                <option value="">Failed</option>
+                              </select>
+                            </div>
+                             <div></div>
+                          </div>
+                          <div class="col-3">
+                            <div>BankTxn ID 123456</div>
+                          </div> 
+                          </div> 
+                       </div><hr>
+                       <div class="d3">
+                         <div class="row text-center">
+                          <div class="col-4">
+                            <div>
+                              <i class="far fa-heart"></i>
+                               <h4>24x7 help</h4>
+                               <p>Have a query and new help ? <a href="">Click here</a></p>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div>
+                              <i class="far fa-heart"></i>
+                               <h4>Sheltic's Trust</h4>
+                               <p>Your Money is always in your hands.All returns come with no question asked gurantee.</p>
+                            </div>
+                            
+                          </div> 
+                          <div class="col-4">
+                             <div>
+                              <i class="far fa-heart"></i>
+                               <h4>Ultimate Privacy</h4>
+                               <p>we work for your 100% privacy. If you have an issue, your money is immediately returned. </p>
+                             </div>
+                          </div>
+                          </div> 
+                       </div>
+                     </div>
+                   </div>
+                  
                   <!---------------------------------rigghhttside for All Transactions section end------------------------------------------------- -->
 
 
 
                   <!---------------------------------rigghhttside for Gift Cards section------------------------------------------------- -->
-                  <div class="tab-pane fade" id="v-pills-gift" role="tabpanel" aria-labelledby="v-pills-gift-tab">Gift Cards
+                  <div class="tab-pane fade" id="v-pills-gift" role="tabpanel" aria-labelledby="v-pills-gift-tab">
                     <div>
                       <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
@@ -560,13 +672,21 @@
                         <li><a href="#">Gift Cards</a></li>
                       </ul>
                     </div>
+
+                    <div class="giftCards">
+                      <div class="card w-75 border-info">
+                        <div class="card-body">
+                          <h4>Gift Cards are not available.</h4>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <!---------------------------------rigghhttside for Gift Cards section end------------------------------------------------- -->
 
 
 
                   <!---------------------------------rigghhttside for My Coupons section------------------------------------------------- -->
-                  <div class="tab-pane fade" id="v-pills-coupons" role="tabpanel" aria-labelledby="v-pills-coupons-tab">My Coupons
+                  <div class="tab-pane fade" id="v-pills-coupons" role="tabpanel" aria-labelledby="v-pills-coupons-tab">
                     <div>
                       <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
@@ -574,6 +694,62 @@
                         <li><a href="#">Payments</a></li>
                         <li><a href="#">My Coupons</a></li>
                       </ul>
+                    </div>
+
+                    <h4 style="text-align: center;">My Coupons</h4>
+                    <div class="card-deck" style="margin: 20px;">
+                      <div class="card border-info">
+                    
+                        <div class="card-body">
+                          <div class="card-header border-info">
+                            <h4>Coupon-1</h4>
+                          </div>
+                    
+                          <ul class="card-text coupon" style="font-size: 20px; margin: 10px; ">
+                    
+                            <li>Coupon Value : ₹ 820</li>
+                            <li>Date and Time : 6/12/2020 10:14 AM</li>
+                            <li>Code : 0987654321123456</li>
+                            <div class="dropdown-container">
+                              <label>Coupon Status : </label>
+                              <select name="cars" id="cars" style="padding: 5px; font-size: 18px;">
+                                <option value="none">Ready To Use</option>
+                                <option value="none">Expired</option>
+                              </select></div>
+                            <li style="display: inline-block;">Comment: <textarea class="form-control" rows="1"
+                                style="float: right; margin-left: 10px; margin-top: 10px;"></textarea></li>
+                    
+                          </ul>
+                        </div>
+                    
+                      </div>
+                    
+                      <div class="card border-info">
+                    
+                        <div class="card-body">
+                          <div class="card-header border-info">
+                            <h4>Coupon-2</h4>
+                          </div>
+                    
+                          <ul class="card-text coupon" style="margin: 10px; font-size: 20px;">
+                            <li>Coupon Value : ₹ 820</li>
+                            <li>Date and Time : 6/12/2020 10:14 AM</li>
+                            <li>Code : 0987654321123456</li>
+                            <div class="dropdown-container">
+                              <label>Coupon Status : </label>
+                              <select name="cars" id="cars" style="padding: 5px; font-size: 18px;">
+                                <option value="none">Ready To Use</option>
+                                <option value="none">Expired</option>
+                              </select></div>
+                            <li style="display: inline-block;">Comment: <textarea class="form-control" rows="1"
+                                style="float: right; margin-left: 10px; margin-top: 10px;"></textarea></li>
+                    
+                          </ul>
+                        </div>
+                    
+                      </div>
+                    
+                    
                     </div>
                   </div>
                   <!---------------------------------rigghhttside for My Coupons section end------------------------------------------------- -->

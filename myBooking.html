@@ -35,8 +35,7 @@
     <header>
         <nav class="navbar  fixed-top">
 
-            <div class="logo" style="display:inline-block"><a href="index.html"><i class="fa-2x fas fa-arrow-left"
-                        aria-hidden="true"></i></a>
+            <div class="logo" style="display:inline-block"><a href="index.html"><i class="fas fa-arrow-left" style="font-size: 24px; padding: 0 20px 10px 0"></i></a>
                 <a href="" class="navbar-brand">SHELTOWN.in<p>Live Like you own it</p></a>
             </div>
             <div style="float:right; display:inline-block;font-size: 20px;color: white">
@@ -53,21 +52,38 @@
      
         
         <!------------------------My Account Section End--------------------------------->
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html">My Account</a></li>
+                <li><a href="#">My Bookings</a></li>
+            </ul>
+        </div>
         <div class="col-lg-12 col-md-12 col-sm-12 p-1">
         <div class="card m-1" style="padding-left: 40px;">
+            
         <div class="card-body">
-            <div class="pp1">
-                <ul>
-                    <li><i class="fas fa-circle"></i><b>Booking confirmed</b></li>
-                    <li style="padding: 0 0 0 18px;"> Ready To Move In</li>
-                </ul>
-            </div>
+           
+        <div class="pp1">
+            <ul>
+                <li>
+                    <div class="dropdown-container">
+                        <label>Booking Status:</label>
+                        <select name="" id="">
+                            <option value="">Booking Confirmed</option>
+                            <option value="">Booking Pending</option>
+                        </select>
+                    </div>
+                </li>
+                <li style=" font-size: 16px;color: grey; padding: 0 0 0 115px;"> Ready To Move In</li>
+            </ul>
+        </div>
          
 
         <!----------------------------------Image Slider Start----------------------------------->
 
 
-        <center>
+        
             <div class="image">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -103,7 +119,7 @@
                 </div>
             </div>
            
-        </center>
+       
    
         <!-------------------------------------------Image Slider End--------------------------------->
       
@@ -111,10 +127,9 @@
                     <ul>
                         <li>Property Name :</li>
                         <li>Monthly rent :</li>
-                        <li>Payment status :</li>
                         <li>Move-In Schedule :</li>
-                        <li>Last Payment : 320</li>
-                        <li>Date And Time : 19/11/2020</li>
+                        <li>Last Payment Done: ₹ 320</li>
+                        <li>Date And Time : 19/11/2020 21:30</li>
                         <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">Raise An
                             Issue</button>
                         <a type="button" class="btn btn-info" href="#pay" data-toggle="modal" data-target="#payrent" aria-pressed="false"
